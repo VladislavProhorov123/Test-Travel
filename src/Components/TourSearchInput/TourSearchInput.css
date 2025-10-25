@@ -1,0 +1,42 @@
+.search-form {
+  position: relative;
+    width: 100%;
+  margin: 50px auto;
+}
+
+.search-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.dropdown {
+    position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #d1d1d1;
+  border-radius: 6px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+
+}
+
+.dropdown li {
+    padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown i {
+  margin-right: 5px;
+}
+
+.country-flag {
+  width: 25px;
+  border-radius: 2px;
+  margin-right: 5px;
+}
