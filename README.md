@@ -1,16 +1,40 @@
-# React + Vite
+# Edusity React Travel Search
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Простой проект на **React**, который позволяет искать туры по странам, городам и отелям.  
 
-Currently, two official plugins are available:
+- Используется React с хуками (`useState`, `useEffect`).  
+- Динамический дропдаун с подсказками по странам, городам и отелям.  
+- Работа с mock API для стран, городов и отелей.  
+- Возможность выбора тура и отображения информации о нём.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Скриншоты
+![Пример интерфейса](ссылка-на-скриншот)
 
-## React Compiler
+## Установка и запуск
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Клонируем репозиторий:
+```bash
+git clone https://github.com/<твой-ник-на-github>/<название-репозитория>.git
+cd <название-репозитория>
+npm install
+npm start
+```
 
-## Expanding the ESLint configuration
+## Стек технологий
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React 18**  
+- **JavaScript (ES6+)**  
+- **CSS / Flexbox**  
+- **Vite**  
+- **GitHub Pages** для хостинга  
+
+## Как использовать
+
+1. Введите страну, город или отель в поисковую строку.  
+2. Выберите элемент из выпадающего списка.  
+3. Информация о выбранном туре выводится в консоль (можно расширить UI для показа данных).  
+
+## Ссылки
+
+- Репозиторий: [Edusity React] (https://github.com/VladislavProhorov123/Test-Travel)
+- Демо: (https://vladislavprohorov123.github.io/Test-Travel/)
