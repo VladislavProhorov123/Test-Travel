@@ -2,14 +2,13 @@ import React, { useEffect, useState } from "react";
 import "./TourSearchInput.css";
 import { getCountries, searchGeo } from "../../api/api.js";
 
-export default function TourSearch() {
+export default function TourSearchInput({onSelectItem}) {
   const [query, setQuery] = useState("");
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
 
-  // вынесем наружу, чтобы можно было переиспользовать
   const fetchCountries = async () => {
     try {
       setLoading(true);
@@ -55,6 +54,8 @@ export default function TourSearch() {
     setQuery(item.name);
     setSelectedItem(item);
     setShowDropdown(false);
+
+    if(onSelectItem) onSelectItem(item)
   };
 
   const handleFocus = () => {
@@ -68,7 +69,7 @@ export default function TourSearch() {
   };
 
   return (
-    <form className="search-form" onSubmit={handleSubmit}>
+    <form  className="search-form" onSubmit={handleSubmit}>
       <input
         type="text"
         placeholder="Виберіть тур..."
@@ -76,6 +77,7 @@ export default function TourSearch() {
         onChange={handleChange}
         onFocus={handleFocus}
       />
+      
 
       {showDropdown && (
         <ul className="dropdown">

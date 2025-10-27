@@ -14,12 +14,16 @@ body {
 .container {
     width: 700px;
     border: 1px solid #d1d1d1;
-    height: 90vh;
     display: flex;
+    min-height: 90vh;
     flex-direction: column;
     margin: 20px auto;
     padding: 25px;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+ul, li {
+  list-style-type: none;
 }
